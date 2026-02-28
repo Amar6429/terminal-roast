@@ -1,0 +1,43 @@
+{
+  "name": "terminal-roaster",
+  "displayName": "Terminal Roast 🔥",
+  "description": "Automatically roasts your failures with meme sounds when terminal commands fail.",
+  "version": "1.0.0",
+  "publisher": "YourName",
+  "engines": {
+    "vscode": "^1.80.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "terminal-roast.toggleMute",
+        "title": "Terminal Roast: Toggle Mute",
+        "category": "Terminal Roast"
+      }
+    ],
+    "configuration": {
+      "title": "Terminal Roast",
+      "properties": {
+        "terminalRoast.enabled": {
+          "type": "boolean",
+          "default": true,
+          "description": "Enable or disable the roasting sounds."
+        }
+      }
+    }
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "pretest": "npm run lint",
+    "test": "node ./test/runTest.js"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.80.0",
+    "eslint": "^8.41.0"
+  }
+}
