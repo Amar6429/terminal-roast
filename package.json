@@ -3,9 +3,13 @@
   "displayName": "Terminal Roast 🔥",
   "description": "Automatically roasts your failures with meme sounds when terminal commands fail.",
   "version": "1.0.0",
-  "publisher": "YourName",
+  "publisher": "Amar-Surushe",
   "engines": {
     "vscode": "^1.80.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Amar6429/terminal-roast.git"
   },
   "categories": [
     "Other"
